@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CAE3E0C715D60F1400D68304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0C615D60F1400D68304 /* Foundation.framework */; };
-		CAE3E0CC15D60F1400D68304 /* BackboneExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CAE3E0CB15D60F1400D68304 /* BackboneExtensions.h */; };
-		CAE3E0CE15D60F1400D68304 /* BackboneExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E0CD15D60F1400D68304 /* BackboneExtensions.m */; };
 		CAE3E0D615D60F1400D68304 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0D515D60F1400D68304 /* SenTestingKit.framework */; };
 		CAE3E0D915D60F1400D68304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0C615D60F1400D68304 /* Foundation.framework */; };
 		CAE3E0DC15D60F1400D68304 /* libBackboneExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0C315D60F1400D68304 /* libBackboneExtensions.a */; };
@@ -51,7 +49,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				CAE3E0CC15D60F1400D68304 /* BackboneExtensions.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +58,6 @@
 		CAE3E0C315D60F1400D68304 /* libBackboneExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBackboneExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE3E0C615D60F1400D68304 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CAE3E0CA15D60F1400D68304 /* BackboneExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BackboneExtensions-Prefix.pch"; sourceTree = "<group>"; };
-		CAE3E0CB15D60F1400D68304 /* BackboneExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackboneExtensions.h; sourceTree = "<group>"; };
-		CAE3E0CD15D60F1400D68304 /* BackboneExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackboneExtensions.m; sourceTree = "<group>"; };
 		CAE3E0D415D60F1400D68304 /* BackboneExtensionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackboneExtensionsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE3E0D515D60F1400D68304 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CAE3E0DF15D60F1400D68304 /* BackboneExtensionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BackboneExtensionsTests-Info.plist"; sourceTree = "<group>"; };
@@ -165,8 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				CAE3E11A15D6109B00D68304 /* GCDSingleton.h */,
-				CAE3E0CB15D60F1400D68304 /* BackboneExtensions.h */,
-				CAE3E0CD15D60F1400D68304 /* BackboneExtensions.m */,
 				CAE3E11415D6103500D68304 /* BackboneFilteredRouter.h */,
 				CAE3E11515D6103500D68304 /* BackboneFilteredRouter.m */,
 				CAE3EBCE15D6241C00EBA58F /* BackboneLayout.h */,
@@ -342,7 +335,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAE3E0CE15D60F1400D68304 /* BackboneExtensions.m in Sources */,
 				CAE3E10915D60FD500D68304 /* Backbone.m in Sources */,
 				CAE3E10A15D60FD500D68304 /* BackboneCollection.m in Sources */,
 				CAE3E10B15D60FD500D68304 /* BackboneEvents.m in Sources */,
