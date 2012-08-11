@@ -14,7 +14,7 @@
 
 @implementation BackboneLayoutManager
 
-+ (id)sharedLayoutManager {
++ (BackboneLayoutManager *)sharedLayoutManager {
   DEFINE_SHARED_INSTANCE_USING_BLOCK(^{
     return [[self alloc] init];
   });

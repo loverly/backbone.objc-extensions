@@ -18,7 +18,7 @@
 
 @property (nonatomic, readonly) UIViewController<BackboneLayout> *visibleLayout;
 
-+ (id)sharedLayoutManager;
++ (BackboneLayoutManager *)sharedLayoutManager;
 
 - (void)setLayoutWithClass:(Class)layoutClass;
 
