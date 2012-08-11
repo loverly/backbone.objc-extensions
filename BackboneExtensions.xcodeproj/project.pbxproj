@@ -101,6 +101,7 @@
 		CAE3E11A15D6109B00D68304 /* GCDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSingleton.h; sourceTree = "<group>"; };
 		CAE3E11B15D6110500D68304 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CAE3E11E15D6111600D68304 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CAE3EBCE15D6241C00EBA58F /* BackboneLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackboneLayout.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +169,7 @@
 				CAE3E0CD15D60F1400D68304 /* BackboneExtensions.m */,
 				CAE3E11415D6103500D68304 /* BackboneFilteredRouter.h */,
 				CAE3E11515D6103500D68304 /* BackboneFilteredRouter.m */,
+				CAE3EBCE15D6241C00EBA58F /* BackboneLayout.h */,
 				CAE3E11715D6103E00D68304 /* BackboneLayoutManager.h */,
 				CAE3E11815D6103E00D68304 /* BackboneLayoutManager.m */,
 				CAE3E0C915D60F1400D68304 /* Supporting Files */,
@@ -506,6 +508,7 @@
 				CAE3E0EA15D60F1400D68304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAE3E0EB15D60F1400D68304 /* Build configuration list for PBXNativeTarget "BackboneExtensionsTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +517,7 @@
 				CAE3E0ED15D60F1400D68304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

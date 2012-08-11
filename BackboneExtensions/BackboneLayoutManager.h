@@ -7,14 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@protocol BackboneLayout;
 
 @interface BackboneLayoutManager : NSObject {
  @private
   NSMutableDictionary *layouts_;
 }
 
+@property (nonatomic, readonly) UIViewController<BackboneLayout> *visibleLayout;
+
 + (id)sharedLayoutManager;
 
-- (void)setLayout:(Class)layoutClass;
+- (void)setLayoutWithClass:(Class)layoutClass;
 
 @end

@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 Edmond Leung. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
 #import "BackboneLayoutManager.h"
 #import "GCDSingleton.h"
+#import "BackboneLayout.h"
 
 @implementation BackboneLayoutManager
 
@@ -20,7 +20,17 @@
   });
 }
 
-- (void)setLayout:(Class)layoutClass {
+- (UIViewController<BackboneLayout> *)visibleLayout {
+  UIWindow *window = [UIApplication sharedApplication].keyWindow;
+  
+  if ([window.rootViewController conformsToProtocol:@protocol(BackboneLayout)]) {
+    return (UIViewController<BackboneLayout> *)window.rootViewController;
+  }
+  
+  return nil;
+}
+
+- (void)setLayoutWithClass:(Class)layoutClass {
   UIViewController *layout;
   UIWindow *window;
   
