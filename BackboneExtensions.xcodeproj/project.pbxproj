@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAE3E0C715D60F1400D68304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0C615D60F1400D68304 /* Foundation.framework */; };
+		CAE3E0CC15D60F1400D68304 /* BackboneExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CAE3E0CB15D60F1400D68304 /* BackboneExtensions.h */; };
+		CAE3E0CE15D60F1400D68304 /* BackboneExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E0CD15D60F1400D68304 /* BackboneExtensions.m */; };
+		CAE3E0D615D60F1400D68304 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0D515D60F1400D68304 /* SenTestingKit.framework */; };
+		CAE3E0D915D60F1400D68304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0C615D60F1400D68304 /* Foundation.framework */; };
+		CAE3E0DC15D60F1400D68304 /* libBackboneExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0C315D60F1400D68304 /* libBackboneExtensions.a */; };
+		CAE3E0E215D60F1400D68304 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAE3E0E015D60F1400D68304 /* InfoPlist.strings */; };
+		CAE3E0E515D60F1400D68304 /* BackboneExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E0E415D60F1400D68304 /* BackboneExtensionsTests.m */; };
+		CAE3E10915D60FD500D68304 /* Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E0F215D60FD500D68304 /* Backbone.m */; };
+		CAE3E10A15D60FD500D68304 /* BackboneCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E0F415D60FD500D68304 /* BackboneCollection.m */; };
+		CAE3E10B15D60FD500D68304 /* BackboneEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E0F615D60FD500D68304 /* BackboneEvents.m */; };
+		CAE3E10C15D60FD500D68304 /* BackboneHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E0F815D60FD500D68304 /* BackboneHistory.m */; };
+		CAE3E10D15D60FD500D68304 /* BackboneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E0FA15D60FD500D68304 /* BackboneModel.m */; };
+		CAE3E10E15D60FD500D68304 /* BackboneRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E0FC15D60FD500D68304 /* BackboneRouter.m */; };
+		CAE3E10F15D60FD500D68304 /* Mixin.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E10015D60FD500D68304 /* Mixin.m */; };
+		CAE3E11015D60FD500D68304 /* NSArray+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E10215D60FD500D68304 /* NSArray+Backbone.m */; };
+		CAE3E11115D60FD500D68304 /* NSDictionary+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E10415D60FD500D68304 /* NSDictionary+Backbone.m */; };
+		CAE3E11215D60FD500D68304 /* NSObject+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E10615D60FD500D68304 /* NSObject+Backbone.m */; };
+		CAE3E11315D60FD500D68304 /* NSString+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E10815D60FD500D68304 /* NSString+Backbone.m */; };
+		CAE3E11615D6103500D68304 /* BackboneFilteredRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E11515D6103500D68304 /* BackboneFilteredRouter.m */; };
+		CAE3E11915D6103E00D68304 /* BackboneLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3E11815D6103E00D68304 /* BackboneLayoutManager.m */; };
+		CAE3E11C15D6110500D68304 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E11B15D6110500D68304 /* QuartzCore.framework */; };
+		CAE3E11D15D6110500D68304 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E11B15D6110500D68304 /* QuartzCore.framework */; };
+		CAE3E11F15D6111600D68304 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E11E15D6111600D68304 /* UIKit.framework */; };
+		CAE3E12015D6111600D68304 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E11E15D6111600D68304 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAE3E0DA15D60F1400D68304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE3E0BA15D60F1400D68304 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE3E0C215D60F1400D68304;
+			remoteInfo = BackboneExtensions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAE3E0C115D60F1400D68304 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				CAE3E0CC15D60F1400D68304 /* BackboneExtensions.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CAE3E0C315D60F1400D68304 /* libBackboneExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBackboneExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE3E0C615D60F1400D68304 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CAE3E0CA15D60F1400D68304 /* BackboneExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BackboneExtensions-Prefix.pch"; sourceTree = "<group>"; };
+		CAE3E0CB15D60F1400D68304 /* BackboneExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackboneExtensions.h; sourceTree = "<group>"; };
+		CAE3E0CD15D60F1400D68304 /* BackboneExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackboneExtensions.m; sourceTree = "<group>"; };
+		CAE3E0D415D60F1400D68304 /* BackboneExtensionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackboneExtensionsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE3E0D515D60F1400D68304 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CAE3E0DF15D60F1400D68304 /* BackboneExtensionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BackboneExtensionsTests-Info.plist"; sourceTree = "<group>"; };
+		CAE3E0E115D60F1400D68304 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAE3E0E315D60F1400D68304 /* BackboneExtensionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackboneExtensionsTests.h; sourceTree = "<group>"; };
+		CAE3E0E415D60F1400D68304 /* BackboneExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackboneExtensionsTests.m; sourceTree = "<group>"; };
+		CAE3E0F015D60FD500D68304 /* ARCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARCHelper.h; path = Libraries/backbone.objc/Backbone/ARCHelper.h; sourceTree = "<group>"; };
+		CAE3E0F115D60FD500D68304 /* Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Backbone.h; path = Libraries/backbone.objc/Backbone/Backbone.h; sourceTree = "<group>"; };
+		CAE3E0F215D60FD500D68304 /* Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Backbone.m; path = Libraries/backbone.objc/Backbone/Backbone.m; sourceTree = "<group>"; };
+		CAE3E0F315D60FD500D68304 /* BackboneCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackboneCollection.h; path = Libraries/backbone.objc/Backbone/BackboneCollection.h; sourceTree = "<group>"; };
+		CAE3E0F415D60FD500D68304 /* BackboneCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackboneCollection.m; path = Libraries/backbone.objc/Backbone/BackboneCollection.m; sourceTree = "<group>"; };
+		CAE3E0F515D60FD500D68304 /* BackboneEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackboneEvents.h; path = Libraries/backbone.objc/Backbone/BackboneEvents.h; sourceTree = "<group>"; };
+		CAE3E0F615D60FD500D68304 /* BackboneEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackboneEvents.m; path = Libraries/backbone.objc/Backbone/BackboneEvents.m; sourceTree = "<group>"; };
+		CAE3E0F715D60FD500D68304 /* BackboneHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackboneHistory.h; path = Libraries/backbone.objc/Backbone/BackboneHistory.h; sourceTree = "<group>"; };
+		CAE3E0F815D60FD500D68304 /* BackboneHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackboneHistory.m; path = Libraries/backbone.objc/Backbone/BackboneHistory.m; sourceTree = "<group>"; };
+		CAE3E0F915D60FD500D68304 /* BackboneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackboneModel.h; path = Libraries/backbone.objc/Backbone/BackboneModel.h; sourceTree = "<group>"; };
+		CAE3E0FA15D60FD500D68304 /* BackboneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackboneModel.m; path = Libraries/backbone.objc/Backbone/BackboneModel.m; sourceTree = "<group>"; };
+		CAE3E0FB15D60FD500D68304 /* BackboneRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackboneRouter.h; path = Libraries/backbone.objc/Backbone/BackboneRouter.h; sourceTree = "<group>"; };
+		CAE3E0FC15D60FD500D68304 /* BackboneRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackboneRouter.m; path = Libraries/backbone.objc/Backbone/BackboneRouter.m; sourceTree = "<group>"; };
+		CAE3E0FD15D60FD500D68304 /* BackboneRouterSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackboneRouterSubclass.h; path = Libraries/backbone.objc/Backbone/BackboneRouterSubclass.h; sourceTree = "<group>"; };
+		CAE3E0FE15D60FD500D68304 /* BackboneTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackboneTypes.h; path = Libraries/backbone.objc/Backbone/BackboneTypes.h; sourceTree = "<group>"; };
+		CAE3E0FF15D60FD500D68304 /* Mixin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mixin.h; path = Libraries/backbone.objc/Backbone/Mixin.h; sourceTree = "<group>"; };
+		CAE3E10015D60FD500D68304 /* Mixin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mixin.m; path = Libraries/backbone.objc/Backbone/Mixin.m; sourceTree = "<group>"; };
+		CAE3E10115D60FD500D68304 /* NSArray+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Backbone.h"; path = "Libraries/backbone.objc/Backbone/NSArray+Backbone.h"; sourceTree = "<group>"; };
+		CAE3E10215D60FD500D68304 /* NSArray+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Backbone.m"; path = "Libraries/backbone.objc/Backbone/NSArray+Backbone.m"; sourceTree = "<group>"; };
+		CAE3E10315D60FD500D68304 /* NSDictionary+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Backbone.h"; path = "Libraries/backbone.objc/Backbone/NSDictionary+Backbone.h"; sourceTree = "<group>"; };
+		CAE3E10415D60FD500D68304 /* NSDictionary+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Backbone.m"; path = "Libraries/backbone.objc/Backbone/NSDictionary+Backbone.m"; sourceTree = "<group>"; };
+		CAE3E10515D60FD500D68304 /* NSObject+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Backbone.h"; path = "Libraries/backbone.objc/Backbone/NSObject+Backbone.h"; sourceTree = "<group>"; };
+		CAE3E10615D60FD500D68304 /* NSObject+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Backbone.m"; path = "Libraries/backbone.objc/Backbone/NSObject+Backbone.m"; sourceTree = "<group>"; };
+		CAE3E10715D60FD500D68304 /* NSString+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Backbone.h"; path = "Libraries/backbone.objc/Backbone/NSString+Backbone.h"; sourceTree = "<group>"; };
+		CAE3E10815D60FD500D68304 /* NSString+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Backbone.m"; path = "Libraries/backbone.objc/Backbone/NSString+Backbone.m"; sourceTree = "<group>"; };
+		CAE3E11415D6103500D68304 /* BackboneFilteredRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneFilteredRouter.h; sourceTree = "<group>"; };
+		CAE3E11515D6103500D68304 /* BackboneFilteredRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneFilteredRouter.m; sourceTree = "<group>"; };
+		CAE3E11715D6103E00D68304 /* BackboneLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneLayoutManager.h; sourceTree = "<group>"; };
+		CAE3E11815D6103E00D68304 /* BackboneLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneLayoutManager.m; sourceTree = "<group>"; };
+		CAE3E11A15D6109B00D68304 /* GCDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSingleton.h; sourceTree = "<group>"; };
+		CAE3E11B15D6110500D68304 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CAE3E11E15D6111600D68304 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE3E0C015D60F1400D68304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE3E0C715D60F1400D68304 /* Foundation.framework in Frameworks */,
+				CAE3E11C15D6110500D68304 /* QuartzCore.framework in Frameworks */,
+				CAE3E11F15D6111600D68304 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE3E0D015D60F1400D68304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE3E0D615D60F1400D68304 /* SenTestingKit.framework in Frameworks */,
+				CAE3E0D915D60F1400D68304 /* Foundation.framework in Frameworks */,
+				CAE3E0DC15D60F1400D68304 /* libBackboneExtensions.a in Frameworks */,
+				CAE3E11D15D6110500D68304 /* QuartzCore.framework in Frameworks */,
+				CAE3E12015D6111600D68304 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAE3E0B815D60F1400D68304 = {
+			isa = PBXGroup;
+			children = (
+				CAE3E0C815D60F1400D68304 /* BackboneExtensions */,
+				CAE3E0DD15D60F1400D68304 /* BackboneExtensionsTests */,
+				CAE3E0C515D60F1400D68304 /* Frameworks */,
+				CAE3E0EE15D60F9D00D68304 /* Libraries */,
+				CAE3E0C415D60F1400D68304 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE3E0C415D60F1400D68304 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3E0C315D60F1400D68304 /* libBackboneExtensions.a */,
+				CAE3E0D415D60F1400D68304 /* BackboneExtensionsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE3E0C515D60F1400D68304 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3E11E15D6111600D68304 /* UIKit.framework */,
+				CAE3E11B15D6110500D68304 /* QuartzCore.framework */,
+				CAE3E0C615D60F1400D68304 /* Foundation.framework */,
+				CAE3E0D515D60F1400D68304 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAE3E0C815D60F1400D68304 /* BackboneExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3E11A15D6109B00D68304 /* GCDSingleton.h */,
+				CAE3E0CB15D60F1400D68304 /* BackboneExtensions.h */,
+				CAE3E0CD15D60F1400D68304 /* BackboneExtensions.m */,
+				CAE3E11415D6103500D68304 /* BackboneFilteredRouter.h */,
+				CAE3E11515D6103500D68304 /* BackboneFilteredRouter.m */,
+				CAE3E11715D6103E00D68304 /* BackboneLayoutManager.h */,
+				CAE3E11815D6103E00D68304 /* BackboneLayoutManager.m */,
+				CAE3E0C915D60F1400D68304 /* Supporting Files */,
+			);
+			path = BackboneExtensions;
+			sourceTree = "<group>";
+		};
+		CAE3E0C915D60F1400D68304 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3E0CA15D60F1400D68304 /* BackboneExtensions-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAE3E0DD15D60F1400D68304 /* BackboneExtensionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3E0E315D60F1400D68304 /* BackboneExtensionsTests.h */,
+				CAE3E0E415D60F1400D68304 /* BackboneExtensionsTests.m */,
+				CAE3E0DE15D60F1400D68304 /* Supporting Files */,
+			);
+			path = BackboneExtensionsTests;
+			sourceTree = "<group>";
+		};
+		CAE3E0DE15D60F1400D68304 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3E0DF15D60F1400D68304 /* BackboneExtensionsTests-Info.plist */,
+				CAE3E0E015D60F1400D68304 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAE3E0EE15D60F9D00D68304 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3E0EF15D60FCA00D68304 /* Backbone */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		CAE3E0EF15D60FCA00D68304 /* Backbone */ = {
+			isa = PBXGroup;
+			children = (
+				CAE3E0F015D60FD500D68304 /* ARCHelper.h */,
+				CAE3E0F115D60FD500D68304 /* Backbone.h */,
+				CAE3E0F215D60FD500D68304 /* Backbone.m */,
+				CAE3E0F315D60FD500D68304 /* BackboneCollection.h */,
+				CAE3E0F415D60FD500D68304 /* BackboneCollection.m */,
+				CAE3E0F515D60FD500D68304 /* BackboneEvents.h */,
+				CAE3E0F615D60FD500D68304 /* BackboneEvents.m */,
+				CAE3E0F715D60FD500D68304 /* BackboneHistory.h */,
+				CAE3E0F815D60FD500D68304 /* BackboneHistory.m */,
+				CAE3E0F915D60FD500D68304 /* BackboneModel.h */,
+				CAE3E0FA15D60FD500D68304 /* BackboneModel.m */,
+				CAE3E0FB15D60FD500D68304 /* BackboneRouter.h */,
+				CAE3E0FC15D60FD500D68304 /* BackboneRouter.m */,
+				CAE3E0FD15D60FD500D68304 /* BackboneRouterSubclass.h */,
+				CAE3E0FE15D60FD500D68304 /* BackboneTypes.h */,
+				CAE3E0FF15D60FD500D68304 /* Mixin.h */,
+				CAE3E10015D60FD500D68304 /* Mixin.m */,
+				CAE3E10115D60FD500D68304 /* NSArray+Backbone.h */,
+				CAE3E10215D60FD500D68304 /* NSArray+Backbone.m */,
+				CAE3E10315D60FD500D68304 /* NSDictionary+Backbone.h */,
+				CAE3E10415D60FD500D68304 /* NSDictionary+Backbone.m */,
+				CAE3E10515D60FD500D68304 /* NSObject+Backbone.h */,
+				CAE3E10615D60FD500D68304 /* NSObject+Backbone.m */,
+				CAE3E10715D60FD500D68304 /* NSString+Backbone.h */,
+				CAE3E10815D60FD500D68304 /* NSString+Backbone.m */,
+			);
+			name = Backbone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE3E0C215D60F1400D68304 /* BackboneExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE3E0E815D60F1400D68304 /* Build configuration list for PBXNativeTarget "BackboneExtensions" */;
+			buildPhases = (
+				CAE3E0BF15D60F1400D68304 /* Sources */,
+				CAE3E0C015D60F1400D68304 /* Frameworks */,
+				CAE3E0C115D60F1400D68304 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BackboneExtensions;
+			productName = BackboneExtensions;
+			productReference = CAE3E0C315D60F1400D68304 /* libBackboneExtensions.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CAE3E0D315D60F1400D68304 /* BackboneExtensionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE3E0EB15D60F1400D68304 /* Build configuration list for PBXNativeTarget "BackboneExtensionsTests" */;
+			buildPhases = (
+				CAE3E0CF15D60F1400D68304 /* Sources */,
+				CAE3E0D015D60F1400D68304 /* Frameworks */,
+				CAE3E0D115D60F1400D68304 /* Resources */,
+				CAE3E0D215D60F1400D68304 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE3E0DB15D60F1400D68304 /* PBXTargetDependency */,
+			);
+			name = BackboneExtensionsTests;
+			productName = BackboneExtensionsTests;
+			productReference = CAE3E0D415D60F1400D68304 /* BackboneExtensionsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE3E0BA15D60F1400D68304 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Edmond Leung";
+			};
+			buildConfigurationList = CAE3E0BD15D60F1400D68304 /* Build configuration list for PBXProject "BackboneExtensions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CAE3E0B815D60F1400D68304;
+			productRefGroup = CAE3E0C415D60F1400D68304 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE3E0C215D60F1400D68304 /* BackboneExtensions */,
+				CAE3E0D315D60F1400D68304 /* BackboneExtensionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE3E0D115D60F1400D68304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE3E0E215D60F1400D68304 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CAE3E0D215D60F1400D68304 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE3E0BF15D60F1400D68304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE3E0CE15D60F1400D68304 /* BackboneExtensions.m in Sources */,
+				CAE3E10915D60FD500D68304 /* Backbone.m in Sources */,
+				CAE3E10A15D60FD500D68304 /* BackboneCollection.m in Sources */,
+				CAE3E10B15D60FD500D68304 /* BackboneEvents.m in Sources */,
+				CAE3E10C15D60FD500D68304 /* BackboneHistory.m in Sources */,
+				CAE3E10D15D60FD500D68304 /* BackboneModel.m in Sources */,
+				CAE3E10E15D60FD500D68304 /* BackboneRouter.m in Sources */,
+				CAE3E10F15D60FD500D68304 /* Mixin.m in Sources */,
+				CAE3E11015D60FD500D68304 /* NSArray+Backbone.m in Sources */,
+				CAE3E11115D60FD500D68304 /* NSDictionary+Backbone.m in Sources */,
+				CAE3E11215D60FD500D68304 /* NSObject+Backbone.m in Sources */,
+				CAE3E11315D60FD500D68304 /* NSString+Backbone.m in Sources */,
+				CAE3E11615D6103500D68304 /* BackboneFilteredRouter.m in Sources */,
+				CAE3E11915D6103E00D68304 /* BackboneLayoutManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE3E0CF15D60F1400D68304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE3E0E515D60F1400D68304 /* BackboneExtensionsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAE3E0DB15D60F1400D68304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE3E0C215D60F1400D68304 /* BackboneExtensions */;
+			targetProxy = CAE3E0DA15D60F1400D68304 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAE3E0E015D60F1400D68304 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE3E0E115D60F1400D68304 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE3E0E615D60F1400D68304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CAE3E0E715D60F1400D68304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE3E0E915D60F1400D68304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BackboneExtensions.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BackboneExtensions/BackboneExtensions-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CAE3E0EA15D60F1400D68304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BackboneExtensions.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BackboneExtensions/BackboneExtensions-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CAE3E0EC15D60F1400D68304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BackboneExtensions/BackboneExtensions-Prefix.pch";
+				INFOPLIST_FILE = "BackboneExtensionsTests/BackboneExtensionsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CAE3E0ED15D60F1400D68304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BackboneExtensions/BackboneExtensions-Prefix.pch";
+				INFOPLIST_FILE = "BackboneExtensionsTests/BackboneExtensionsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE3E0BD15D60F1400D68304 /* Build configuration list for PBXProject "BackboneExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE3E0E615D60F1400D68304 /* Debug */,
+				CAE3E0E715D60F1400D68304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE3E0E815D60F1400D68304 /* Build configuration list for PBXNativeTarget "BackboneExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE3E0E915D60F1400D68304 /* Debug */,
+				CAE3E0EA15D60F1400D68304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CAE3E0EB15D60F1400D68304 /* Build configuration list for PBXNativeTarget "BackboneExtensionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE3E0EC15D60F1400D68304 /* Debug */,
+				CAE3E0ED15D60F1400D68304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE3E0BA15D60F1400D68304 /* Project object */;
+}

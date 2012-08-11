@@ -1,0 +1,3 @@
+[submodule "Libraries/backbone.objc"]
+	path = Libraries/backbone.objc
+	url = git@github.com:eleung/backbone.objc.git
