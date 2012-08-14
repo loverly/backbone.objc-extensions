@@ -12,7 +12,14 @@
 #import "GCDSingleton.h"
 #import "BackboneLayout.h"
 
+@interface BackboneLayoutManager ()
+
+@end
+
 @implementation BackboneLayoutManager
+
+@synthesize visibleLayout = visibleLayout_;
+@synthesize viewController = viewController_;
 
 + (BackboneLayoutManager *)sharedLayoutManager {
   DEFINE_SHARED_INSTANCE_USING_BLOCK(^{
@@ -20,18 +27,17 @@
   });
 }
 
-- (UIViewController<BackboneLayout> *)visibleLayout {
-  UIWindow *window = [UIApplication sharedApplication].keyWindow;
-  
-  if ([window.rootViewController conformsToProtocol:@protocol(BackboneLayout)]) {
-    return (UIViewController<BackboneLayout> *)window.rootViewController;
+- (id)init {
+  self = [super init];
+  if (self) {
+    [UIApplication sharedApplication].keyWindow.rootViewController =
+      viewController_ = [[UIViewController alloc] init];
   }
-  
-  return nil;
+  return self;
 }
 
 - (void)setLayoutWithClass:(Class)layoutClass {
-  UIViewController *layout;
+  UIViewController<BackboneLayout> *layout;
   UIWindow *window;
   
   if (!layouts_) layouts_ = [NSMutableDictionary dictionary];
@@ -45,21 +51,23 @@
   window = [UIApplication sharedApplication].keyWindow;
   
   // Ignore setting of layout if the layout hasn't changed.
-  if (window.rootViewController == layout) return;
-  
-  // If a previous rootViewController exists, then animate the new layout.
-  if (window.rootViewController) {
+  if (self.visibleLayout == layout) return;
+
+  if (self.visibleLayout) {
     CATransition* transition = [CATransition animation];
     
     transition.timingFunction =
-      [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     transition.type = kCATransitionFade;
     
-    [window.layer removeAllAnimations];
-    [window.layer addAnimation:transition forKey:kCATransition];
+    [self.viewController.view.layer removeAllAnimations];
+    [self.viewController.view.layer addAnimation:transition forKey:kCATransition];
   }
   
-  window.rootViewController = layout;
+  layout.view.frame = self.viewController.view.bounds;
+  [self.viewController.view addSubview:layout.view];
+  
+  visibleLayout_ = layout;
 }
 
 @end

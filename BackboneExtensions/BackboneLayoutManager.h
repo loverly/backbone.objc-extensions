@@ -14,8 +14,11 @@
 @interface BackboneLayoutManager : NSObject {
  @private
   NSMutableDictionary *layouts_;
+  UIViewController *viewController_;
+  UIViewController<BackboneLayout> *visibleLayout_;
 }
 
+@property (nonatomic, readonly) UIViewController *viewController;
 @property (nonatomic, readonly) UIViewController<BackboneLayout> *visibleLayout;
 
 + (BackboneLayoutManager *)sharedLayoutManager;
