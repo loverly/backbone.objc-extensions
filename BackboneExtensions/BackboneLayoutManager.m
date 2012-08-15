@@ -64,6 +64,11 @@
     [self.viewController.view.layer addAnimation:transition forKey:kCATransition];
   }
   
+  NSArray *oldViews = self.viewController.view.subviews;
+  for (UIView *view in oldViews) {
+    [view removeFromSuperview];
+  }
+  
   layout.view.frame = self.viewController.view.bounds;
   [self.viewController.view addSubview:layout.view];
   
