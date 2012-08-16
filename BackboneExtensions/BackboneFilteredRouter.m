@@ -89,7 +89,7 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         if (!([self respondsToSelector:filter] &&
-              !![self performSelector:filter])) return;
+              !![self performSelector:filter withObject:url])) return;
 #pragma clang diagnostic pop
       }
     }
