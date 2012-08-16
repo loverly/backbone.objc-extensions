@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAD7BA5115DD6DE400073C60 /* BackboneRelationalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD7BA5015DD6DE400073C60 /* BackboneRelationalModel.m */; };
 		CAE3E0C715D60F1400D68304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0C615D60F1400D68304 /* Foundation.framework */; };
 		CAE3E0D615D60F1400D68304 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0D515D60F1400D68304 /* SenTestingKit.framework */; };
 		CAE3E0D915D60F1400D68304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE3E0C615D60F1400D68304 /* Foundation.framework */; };
@@ -55,6 +56,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CAD7BA4F15DD6DE400073C60 /* BackboneRelationalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneRelationalModel.h; sourceTree = "<group>"; };
+		CAD7BA5015DD6DE400073C60 /* BackboneRelationalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneRelationalModel.m; sourceTree = "<group>"; };
 		CAE3E0C315D60F1400D68304 /* libBackboneExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBackboneExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE3E0C615D60F1400D68304 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CAE3E0CA15D60F1400D68304 /* BackboneExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BackboneExtensions-Prefix.pch"; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				CAE3EBCE15D6241C00EBA58F /* BackboneLayout.h */,
 				CAE3E11715D6103E00D68304 /* BackboneLayoutManager.h */,
 				CAE3E11815D6103E00D68304 /* BackboneLayoutManager.m */,
+				CAD7BA4F15DD6DE400073C60 /* BackboneRelationalModel.h */,
+				CAD7BA5015DD6DE400073C60 /* BackboneRelationalModel.m */,
 				CAE3E0C915D60F1400D68304 /* Supporting Files */,
 			);
 			path = BackboneExtensions;
@@ -348,6 +353,7 @@
 				CAE3E11315D60FD500D68304 /* NSString+Backbone.m in Sources */,
 				CAE3E11615D6103500D68304 /* BackboneFilteredRouter.m in Sources */,
 				CAE3E11915D6103E00D68304 /* BackboneLayoutManager.m in Sources */,
+				CAD7BA5115DD6DE400073C60 /* BackboneRelationalModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
