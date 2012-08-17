@@ -13,6 +13,8 @@
 - (void)setupRelationships;
 
 - (void)relateAttribute:(NSString *)attribute withModel:(Class)model;
-- (void)relateAttribute:(NSString *)attribute withCollection:(Class)collection;
+- (void)relateAttribute:(NSString *)attribute
+         withCollection:(Class)collection
+                ofModel:(Class)model;
 
 @end

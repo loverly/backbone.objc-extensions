@@ -50,14 +50,17 @@ errorCallback:(BackboneErrorBlock)errorCallback {
   
   // Turn related attributes to collections.
   for (NSString *key in self.relatedCollections)  {
+    NSDictionary *info = [self.relatedCollections objectForKey:key];
+    
     if ((collectionJSON = [attributes objectForKey:key]) &&
         [collectionJSON isKindOfClass:[NSArray class]]) {
       collection = [self get:key];
       if (collection) {
         [collection reset:collectionJSON];
       } else {
-        collection = [[[self.relatedCollections objectForKey:key] alloc]
-                      initWithModels:collectionJSON];
+        collection = [[[info objectForKey:@"collection"] alloc]
+                      initWithModel:[info objectForKey:@"model"]
+                      models:collectionJSON];
       }
       
       [mutableAttributes setObject:collection forKey:key];
@@ -84,11 +87,16 @@ errorCallback:(BackboneErrorBlock)errorCallback {
   [self.relatedModels setObject:model forKey:attribute];
 }
 
-- (void)relateAttribute:(NSString *)attribute withCollection:(Class)collection {
+- (void)relateAttribute:(NSString *)attribute
+         withCollection:(Class)collection
+                ofModel:(Class)model {
   if (!self.relatedCollections) {
     self.relatedCollections = [NSMutableDictionary dictionary];
   }
-  [self.relatedCollections setObject:collection forKey:attribute];
+  
+  [self.relatedCollections setObject:
+   @{ @"collection": collection, @"model": model }
+                              forKey:attribute];
 }
 
 @end
