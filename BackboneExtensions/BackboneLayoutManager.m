@@ -31,7 +31,8 @@
   self = [super init];
   if (self) {
     [UIApplication sharedApplication].keyWindow.rootViewController =
-      viewController_ = [[UIViewController alloc] init];
+      viewController_ = [[UINavigationController alloc] init];
+    viewController_.navigationBarHidden = YES;
   }
   return self;
 }
@@ -64,13 +65,8 @@
     [self.viewController.view.layer addAnimation:transition forKey:kCATransition];
   }
   
-  NSArray *oldViews = self.viewController.view.subviews;
-  for (UIView *view in oldViews) {
-    [view removeFromSuperview];
-  }
-  
   layout.view.frame = self.viewController.view.bounds;
-  [self.viewController.view addSubview:layout.view];
+  self.viewController.viewControllers = @[ layout ];
   
   visibleLayout_ = layout;
 }
