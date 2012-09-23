@@ -60,7 +60,8 @@ errorCallback:(BackboneErrorBlock)errorCallback {
       } else {
         collection = [[[info objectForKey:@"collection"] alloc]
                       initWithModel:[info objectForKey:@"model"]
-                      models:collectionJSON];
+                      models:collectionJSON
+                      options:options];
       }
       
       [mutableAttributes setObject:collection forKey:key];
