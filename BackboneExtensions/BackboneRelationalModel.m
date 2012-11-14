@@ -56,12 +56,13 @@ errorCallback:(BackboneErrorBlock)errorCallback {
         [collectionJSON isKindOfClass:[NSArray class]]) {
       collection = [self get:key];
       if (collection) {
-        [collection reset:collectionJSON];
+        [collection reset:collectionJSON
+                  options:options | BackboneParseAttributes];
       } else {
         collection = [[[info objectForKey:@"collection"] alloc]
                       initWithModel:[info objectForKey:@"model"]
                       models:collectionJSON
-                      options:options| BackboneParseAttributes];
+                      options:options | BackboneParseAttributes];
       }
       
       [mutableAttributes setObject:collection forKey:key];
