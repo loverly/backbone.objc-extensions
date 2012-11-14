@@ -39,7 +39,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
         [modelAttributes isKindOfClass:[NSDictionary class]]) {
       model = [[[self.relatedModels objectForKey:key] alloc] init];
       if ([model set:modelAttributes
-             options:options
+             options:options | BackboneParseAttributes
        errorCallback:errorCallback]) {
         [mutableAttributes setObject:model forKey:key];
       } else {
@@ -61,7 +61,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
         collection = [[[info objectForKey:@"collection"] alloc]
                       initWithModel:[info objectForKey:@"model"]
                       models:collectionJSON
-                      options:options];
+                      options:options| BackboneParseAttributes];
       }
       
       [mutableAttributes setObject:collection forKey:key];
