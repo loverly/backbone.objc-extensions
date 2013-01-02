@@ -24,5 +24,6 @@
 + (BackboneLayoutManager *)sharedLayoutManager;
 
 - (void)setLayoutWithClass:(Class)layoutClass;
+- (void)resetLayoutWithClass:(Class)layoutClass;
 
 @end

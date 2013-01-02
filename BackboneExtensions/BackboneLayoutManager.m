@@ -71,4 +71,8 @@
   visibleLayout_ = layout;
 }
 
+- (void)resetLayoutWithClass:(Class)layoutClass {
+  [layouts_ removeObjectForKey:layoutClass];
+}
+
 @end
